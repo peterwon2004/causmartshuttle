@@ -200,15 +200,7 @@ if menu == "학생":
     
     ctx = webrtc_streamer(
         key="qr",
-        video_processor_factory=QRScanner,
-        media_stream_constraints={
-            "video": {
-                "facingMode": {
-                    "ideal": "environment"
-                }
-            },
-            "audio": False,
-        }
+        video_processor_factory=QRScanner
     )
 
     qr_code = None
